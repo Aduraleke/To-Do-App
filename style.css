@@ -288,7 +288,7 @@ position: fixed;
   padding: 8px 12px;
   font-size: 14px;
 
-  color: black;
+  color: transparent;
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s;
