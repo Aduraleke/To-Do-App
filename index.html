@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <!-- Name Entry -->
+    <div id="name-entry">
+      <div id="name-input">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name"  required />
+        <p id="error" style="display: none"></p>
+        <button id="enter-button">Enter</button>
+      </div>
+    </div>
+
+    <!-- Navigation Bar  and User Display -->
+    <nav id="nav-content" style="display: none">
+      <div id="nav-item">
+        <div id="logo">
+          <h1 id="logo-name">To-Do List</h1>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="nav-right">
+          <p id="username">Aduraleke</p>
+          <button class="logout-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 14 14"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M0 1.5A1.5 1.5 0 0 1 1.5 0h7A1.5 1.5 0 0 1 10 1.5v1.939a2 2 0 0 0-.734 1.311H5.75a2.25 2.25 0 1 0 0 4.5h3.516A2 2 0 0 0 10 10.561V12.5A1.5 1.5 0 0 1 8.5 14h-7A1.5 1.5 0 0 1 0 12.5zm10.963 2.807A.75.75 0 0 0 10.5 5v1H5.75a1 1 0 0 0 0 2h4.75v1a.75.75 0 0 0 1.28.53l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-.817-.163"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Task Lists Input Fields -->
+    <div id="app" style="display: none">
+      <h1>To-Do List</h1>
+      <div class="input-container">
+        <div class="gradient-border-input-container">
+          <input
+            type="text"
+            id="task-title"
+            class="gradient-border-input"
+            placeholder="Add task title"
+          />
+        </div>
+        <p id="taskTerror" style="display: none"></p>
+        <div class="gradient-border-input-container">
+          <textarea
+            rows="4"
+            cols="30"
+            id="task-details"
+            class="gradient-border-input"
+            placeholder="Add task details"
+          ></textarea>
+        </div>
+        <p id="taskDerror" style="display: none"></p>
+        <button id="add-task">Add</button>
+      </div>
+    </div>
+
+    <!-- Task List Items -->
+    <div>
+      <ul id="task-list" class="task-list"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
